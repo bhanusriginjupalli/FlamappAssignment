@@ -28,13 +28,13 @@ Instead of estimating one hidden parameter \(t_i\) for every point (which would 
 
 The supplied curve is
 
-\[
+$\[
 x(t)=t\cos\theta-e^{M|t|}\sin(0.3t)\sin\theta+X
 \]
 
 \[
 y(t)=42+t\sin\theta+e^{M|t|}\sin(0.3t)\cos\theta
-\]
+\]$
 
 Unknown parameters
 
