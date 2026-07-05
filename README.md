@@ -172,7 +172,15 @@ For each population member
 Mutation
 
 $$
-v=x_{r1}+F(x_{r2}-x_{r3})
+\mathbf{v}
+=
+\mathbf{x}_{r_1}
++
+F\left(
+\mathbf{x}_{r_2}
+-
+\mathbf{x}_{r_3}
+\right)
 $$
 
 Crossover
@@ -180,18 +188,19 @@ Crossover
 $$
 u_i=
 \begin{cases}
-v_i,&rand_i<CR\\
-x_i,&otherwise
+v_i, & \text{if } rand_i < CR, \\
+x_i, & \text{otherwise}.
 \end{cases}
 $$
 
 Selection
 
 $$
-x_{new}=
+\mathbf{x}_{\text{new}}
+=
 \begin{cases}
-u,&f(u)<f(x)\\
-x,&otherwise
+\mathbf{u}, & \text{if } f(\mathbf{u}) < f(\mathbf{x}), \\
+\mathbf{x}, & \text{otherwise}.
 \end{cases}
 $$
 
