@@ -346,7 +346,8 @@ The arc-length evaluation is intentionally stricter because it compares correspo
 
 Observed Data vs Recovered Curve
 
-(Results/plot1.png)
+![](images/plot1.png)
+
 
 
 This figure demonstrates that the recovered curve almost perfectly overlaps the observed dataset.
@@ -357,7 +358,7 @@ This figure demonstrates that the recovered curve almost perfectly overlaps the 
 
 Uniform Arc-Length Comparison
 
-(Results/plot2.png)
+![](Results/plot2.png)
 
 This figure compares uniformly sampled points after arc-length parameterization, providing an independent validation of the reconstruction quality.
 
