@@ -176,32 +176,27 @@ $$
 =
 \mathbf{x}_{r_1}
 +
-F\left(
-\mathbf{x}_{r_2}
--
-\mathbf{x}_{r_3}
-\right)
+F\left(\mathbf{x}_{r_2}-\mathbf{x}_{r_3}\right)
 $$
 
 Crossover
 
 $$
-u_i=
-\begin{cases}
-v_i, & \text{if } rand_i < CR, \\
-x_i, & \text{otherwise}.
-\end{cases}
+u_i =
+\begin{aligned}
+v_i &\quad \text{if } rand_i < CR \\
+x_i &\quad \text{otherwise}
+\end{aligned}
 $$
 
 Selection
 
 $$
-\mathbf{x}_{\text{new}}
-=
-\begin{cases}
-\mathbf{u}, & \text{if } f(\mathbf{u}) < f(\mathbf{x}), \\
-\mathbf{x}, & \text{otherwise}.
-\end{cases}
+\mathbf{x}_{new} =
+\begin{aligned}
+\mathbf{u} &\quad \text{if } f(\mathbf{u}) < f(\mathbf{x}) \\
+\mathbf{x} &\quad \text{otherwise}
+\end{aligned}
 $$
 
 This avoids poor local minima.
