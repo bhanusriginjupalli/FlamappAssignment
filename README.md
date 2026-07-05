@@ -346,7 +346,7 @@ The arc-length evaluation is intentionally stricter because it compares correspo
 
 Observed Data vs Recovered Curve
 
-![](images/plot1.png)
+![](Results/plot1.png)
 
 
 
