@@ -400,7 +400,7 @@ Desmos link:
 # Advantages
 
 - Optimizes only three unknown parameters.
-- Avoids explicit estimation of hidden \(t_i\).
+- Avoids explicit estimation of hidden $$\(t_i\)$$.
 - Robust to unordered point clouds.
 - Efficient global and local optimization.
 - Independent validation using arc-length sampling.
@@ -408,4 +408,4 @@ Desmos link:
 
 # Conclusion
 
-The proposed continuous-curve optimization successfully recovered the unknown parameters using only the provided dataset and the given mathematical model. The optimization converged to values effectively equal to the expected parameters (\(\theta\approx30^\circ\), \(M\approx0.03\), \(X\approx55\)). Both the primary KDTree metric and the independent arc-length validation demonstrate an excellent fit, confirming that the recovered curve accurately reconstructs the supplied data while avoiding the complexity of optimizing individual hidden parameter values.
+The proposed continuous-curve optimization successfully recovered the unknown parameters using only the provided dataset and the given mathematical model. The optimization converged to values effectively equal to the expected parameters $$(\(\theta\approx30^\circ\), \(M\approx0.03\), \(X\approx55\))$$. Both the primary KDTree metric and the independent arc-length validation demonstrate an excellent fit, confirming that the recovered curve accurately reconstructs the supplied data while avoiding the complexity of optimizing individual hidden parameter values.
