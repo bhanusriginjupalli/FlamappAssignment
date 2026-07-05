@@ -389,23 +389,7 @@ This figure compares uniformly sampled points after arc-length parameterization,
 # Final Submission Equation
 
 $$
-\left(
-t\cos(0.5235993981)
--
-e^{0.0300004493|t|}
-\sin(0.3t)
-\sin(0.5235993981)
-+
-55.0000141642,
-\;
-42
-+
-t\sin(0.5235993981)
-+
-e^{0.0300004493|t|}
-\sin(0.3t)
-\cos(0.5235993981)
-\right)
+\left(t\cos(0.5235993981)-e^{0.0300004493|t|}\sin(0.3t)\sin(0.5235993981)+55.0000141642,\;42+t\sin(0.5235993981)+e^{0.0300004493|t|}\sin(0.3t)\cos(0.5235993981)\right)
 $$
 
 ---
