@@ -395,7 +395,7 @@ $$
 ---
 
 Desmos link:
-[](https://www.desmos.com/calculator/omrjff3a3s)
+[Desmos](https://www.desmos.com/calculator/omrjff3a3s)
 
 # Advantages
 
