@@ -394,6 +394,9 @@ $$
 
 ---
 
+Desmos link:
+[](https://www.desmos.com/calculator/omrjff3a3s)
+
 # Advantages
 
 - Optimizes only three unknown parameters.
