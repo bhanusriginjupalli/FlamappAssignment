@@ -28,13 +28,13 @@ Instead of estimating one hidden parameter \(t_i\) for every point (which would 
 
 The supplied curve is
 
-$\[
+$$
 x(t)=t\cos\theta-e^{M|t|}\sin(0.3t)\sin\theta+X
-\]
+$$
 
-\[
+$$
 y(t)=42+t\sin\theta+e^{M|t|}\sin(0.3t)\cos\theta
-\]$
+$$
 
 Unknown parameters
 
@@ -59,15 +59,15 @@ The curve consists of three components.
 
 ## 1. Linear Translation
 
-\[
+$$
 t\cos\theta
-\]
+$$
 
 and
 
-\[
+$$
 42+t\sin\theta
-\]
+$$
 
 represent a rotated line.
 
@@ -75,9 +75,9 @@ represent a rotated line.
 
 ## 2. Oscillatory Component
 
-\[
+$$
 e^{M|t|}\sin(0.3t)
-\]
+$$
 
 adds periodic oscillations whose amplitude changes with t.
 
@@ -93,9 +93,9 @@ X shifts the curve horizontally.
 
 A straightforward approach is to optimize
 
-\[
+$$
 (\theta,M,X,t_1,t_2,\ldots,t_{1500})
-\]
+$$
 
 requiring 1503 optimization variables.
 
@@ -142,11 +142,11 @@ Let
 
 The optimization minimizes
 
-\[
+$$
 L=\sum_{i=1}^{N}
 \min_{c\in C}
 \|p_i-c\|
-\]
+$$
 
 This is the primary optimization objective.
 
@@ -171,29 +171,29 @@ For each population member
 
 Mutation
 
-\[
+$$
 v=x_{r1}+F(x_{r2}-x_{r3})
-\]
+$$
 
 Crossover
 
-\[
+$$
 u_i=
 \begin{cases}
 v_i,&rand_i<CR\\
 x_i,&otherwise
 \end{cases}
-\]
+$$
 
 Selection
 
-\[
+$$
 x_{new}=
 \begin{cases}
 u,&f(u)<f(x)\\
 x,&otherwise
 \end{cases}
-\]
+$$
 
 This avoids poor local minima.
 
@@ -218,16 +218,16 @@ Advantages
 
 The cumulative arc length is
 
-\[
+$$
 s_i=\sum_{k=1}^{i}
 \sqrt{(\Delta x_k)^2+(\Delta y_k)^2}
-\]
+$$
 
 Normalize
 
-\[
+$$
 u=\frac{s}{s_{max}}
-\]
+$$
 
 Both curves are interpolated using cubic interpolation and uniformly sampled.
 
@@ -265,15 +265,15 @@ Arc-Length Validation
 
 KDTree nearest-neighbor L1 distance
 
-\[
+$$
 L_{KD}=\sum_i d_i
-\]
+$$
 
 where
 
-\[
+$$
 d_i=\min_{c\in C}\|p_i-c\|
-\]
+$$
 
 This is the metric minimized during optimization.
 
@@ -285,13 +285,13 @@ Both curves are reparameterized by arc length.
 
 Uniformly sampled points are compared using
 
-\[
+$$
 L_{Arc}=\sum_i
 \sqrt{
 (x_i-\hat{x}_i)^2+
 (y_i-\hat{y}_i)^2
 }
-\]
+$$
 
 This validates the recovered curve independently.
 
@@ -366,7 +366,7 @@ This figure compares uniformly sampled points after arc-length parameterization,
 
 # Final Submission Equation
 
-```latex
+$$
 \left(
 t\cos(0.5235993981)
 -
@@ -384,7 +384,7 @@ e^{0.0300004493|t|}
 \sin(0.3t)
 \cos(0.5235993981)
 \right)
-```
+$$
 
 ---
 
