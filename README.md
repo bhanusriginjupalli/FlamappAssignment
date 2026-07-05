@@ -402,10 +402,6 @@ $$
 - Efficient global and local optimization.
 - Independent validation using arc-length sampling.
 
-# Limitations
-
-- KDTree optimization is one-sided; a symmetric Chamfer distance could further improve robustness.
-- Arc-length parameterization approximates correspondence and may differ slightly from the hidden parameter \(t\).
 
 # Conclusion
 
